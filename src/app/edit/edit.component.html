@@ -1,0 +1,16 @@
+<ag-grid-angular
+    style="width: 1000px; height: 430px;"
+    class="ag-theme-balham"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [pagination]="true"
+    [paginationPageSize]="12"
+    [enableFilter]="true"
+    [enableSorting]="true"
+    [enableColResize]="true"
+    [animateRows]="true"
+    [rowSelection]="rowSelection"
+    (gridReady)="onGridReady($event)"
+    >
+</ag-grid-angular>
+<button (click)="EditSelectrow()">UpdateSelectedRow</button>

@@ -1,0 +1,15 @@
+<button [routerLink]="['']"  >BackToMenu</button>
+<ag-grid-angular
+    style="width: 1000px; height: 420px;"
+    class="ag-theme-balham"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [pagination]="true"
+    [paginationPageSize]="12"
+    [enableFilter]="true"
+    [enableSorting]="true"
+    [enableColResize]="true"
+    [animateRows]="true"
+    (gridReady)="onGridReady($event)"
+    >
+</ag-grid-angular>
